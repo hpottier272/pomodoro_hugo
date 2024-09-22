@@ -1,22 +1,43 @@
+/*
+let secondes = 0;
+let minutes = 2;
 
+    let para_min = document.getElementById("affichage_min");
+    let para_sec = document.getElementById("affichage_sec");
+    para_sec.innerHTML = secondes;
+    para_min.innerHTML = minutes;
+    let bouton = document.getElementById("action");
 
-let secondes = 60;
-
-  // élément où afficher le décompte
-  let para = document.getElementById("affichage");
-
-  // lance l'exécution de la fonction à toutes les secondes
-  let chrono = window.setInterval(tictictic, 1000);
-
-  // ---------------------------------------------------------
-  // Incrément le nombre de secondes, affiche cette quantité
-  // et arrête automatiquement après une minute.
-  // ---------------------------------------------------------
-  function tictictic() {
-    secondes--;
-    para.innerHTML = secondes;
-    if (secondes == 00) {
-      // arrête l'exécution lancée par setInterval()
-      window.clearTimeout(chrono);
+    bouton.addEventListener("click",temps(2));
+ 
+    function temps(test) {
+        console.log(test);
+        if (test == 0){
+            if (secondes == 60){
+                minutes--;
+                secondes = 60;
+            }
+            secondes--;
+            para_sec.innerHTML = secondes;
+            para_min.innerHTML = minutes;
+            if (secondes == 0) {
+                minutes--;
+                secondes = 60;
+            }
+            test = 1;
+        }
+        console.log("cc"+test);
+        if(test == 1){
+            console.log("dac"+test);
+            //window.setTimeout(temps(0),1000);
+        }
+        else{
+            minutes = 2;
+            secondes = 0; 
+            para_sec.innerHTML = secondes;
+            para_min.innerHTML = minutes;
+            setTimeout(1000);
+            console.log("ccccccc");
+        }
     }
-  }
+*/

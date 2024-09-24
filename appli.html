@@ -3,14 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>pomodoro_hugo</title>
-    <script defer src="test;.js"></script>
+    <script defer src="partie_js.js"></script>
     <link rel="stylesheet" href="partie_css.css">
 </head>
 <body>
     <h1>Bienvenue sur le pomodoro de Hugo</h1>
     <p id="affichage_min"></p>
     <p id="affichage_sec"></p>
-    <input id="action" type="button" value="Démarer"/>
-    <input id="res" type="button" value="reinitializer"/>
+    <p id="affichage_repetition"></p>
+    <button id = "action" type = "button" alt = "bouton de lancement du chrono" onclick="lance()">Démarer</button>
+    <input id="min_tr" alt="saisi minute de travail" size = "30" placeholder = "Veuiller entrer les minutes de travail que vous voulez !"/>
+    <input id="sec_tr" alt="saisi seconde de travail" size = "30" placeholder = "Veuiller entrer les secondes de travail que vous voulez !"/>
+    <input id="min_rp" alt="saisi minute de repos" size = "30" placeholder = "Veuiller entrer les minutes de repos que vous voulez !"/>
+    <input id="sec_rp" alt="saisi seconde de repos" size = "30" placeholder = "Veuiller entrer les secondes de repos que vous voulez !"/>
+    <input id="repeti" alt="saisi nombre de repetion" size = "30" placeholder = "Veuiller entrer le nombre de répétitions que vous voulez !"/>
+    <label >Par défault : 25 minutes de travail et 5 minutes de repos avec 10 répétitions </label>
+    <button id = "maj" type = "button" alt = "bouton appliquer valeur chono" onclick="valid()">Appliquer</button>
 </body>
 </html>

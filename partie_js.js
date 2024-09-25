@@ -4,6 +4,11 @@ var chm_min_rp = document.getElementById("min_rp");
 var chm_sec_rp = document.getElementById("sec_rp");
 var rep_cycle = document.getElementById("repeti");
 let bouton = document.getElementById("action");
+let para_min = document.getElementById("affichage_min");
+let para_sec = document.getElementById("affichage_sec");
+let para_repeti = document.getElementById("affichage_repetition");
+let temps_de = document.getElementById("temps");
+let mode = "TRAVAIL";
 var secondes = 0;
 var secondes_rp = 0;
 var minutes_rp = 5;
@@ -18,15 +23,12 @@ var minutes_repos;
 var secondes_repos;
 var minutes_travail;
 var secondes_travail;
-let para_min = document.getElementById("affichage_min");
-let para_sec = document.getElementById("affichage_sec");
-let para_repeti = document.getElementById("affichage_repetition");
 let play = false;
 let travail = 1;
 para_sec.innerHTML = secondes;
 para_min.innerHTML = minutes;
-para_repeti.innerHTML = "<p>Nombre de répétition restante : </p>" + cycle;
-
+para_repeti.innerHTML = "<p>Nombre de cycle(s) restant(s) : </p>" + cycle;
+temps_de.innerHTML = "<p>Temps de : " + mode;
 
 function valid(){
     if(chm_min_rp.value != 0 && chm_min_rp.value <=59){
@@ -53,7 +55,7 @@ function valid(){
     }
     para_min.innerHTML = minutes;
     para_sec.innerHTML = secondes;
-    para_repeti.innerHTML = "<p>Nombre de répétition restante : </p>" + cycle;
+    para_repeti.innerHTML = "<p>Nombre de cycle(s) restant(s) : </p>" + cycle;
 
 }
 
@@ -75,7 +77,7 @@ function lance(){
         cycle = cycle_depart;
         para_sec.innerHTML = secondes;
         para_min.innerHTML = minutes;
-        para_repeti.innerHTML = "<p>Nombre de répétition restante : </p>" + cycle;
+        para_repeti.innerHTML = "<p>Nombre de cycle(s) restant(s) : </p>" + cycle;
         bouton.textContent = "Démarer";
     };
     tictictic();
@@ -89,29 +91,51 @@ function tictictic() {
         secondes--;
         para_sec.innerHTML = secondes;
         para_min.innerHTML = minutes;
-        para_repeti.innerHTML = "<p>Nombre de répétition restante : </p>" + cycle;
+        para_repeti.innerHTML = "<p>Nombre de cycle(s) restant(s) : </p>" + cycle;
+
+        if(minutes == 0 && secondes <= 10){
+            if (para_min.style.color == "rgb(194, 164, 17)"){
+                para_min.style.color = "rgb(0,0,0)";
+                para_sec.style.color = "rgb(0,0,0)";
+            }
+            else{
+                para_min.style.color = "rgb(194, 164, 17)";
+                para_sec.style.color = "rgb(194, 164, 17)";
+            }
+        }
 
         if (secondes == 0 && minutes == 0) {
             travail ++;
             if (travail % 2 == 0){//repos
+                mode = "REPOS";
+                document.body.style.background = "linear-gradient(to bottom right,rgb(24, 2, 189),85%, rgb(153, 142, 234)";
                 secondes = secondes_depart_repos;
                 minutes = minutes_depart_repos;
                 para_sec.innerHTML = secondes;
                 para_min.innerHTML = minutes;
+                temps_de.innerHTML = "<p>Temps de : " + mode;
+                para_min.style.color = "rgb(194, 164, 17)";
+                para_sec.style.color = "rgb(194, 164, 17)";
             }
             if (travail % 2 != 0){//travail
+                mode = "TRAVAIL";
+                document.body.style.background = "linear-gradient(to bottom right,rgb(189, 2, 2),85%, rgb(254, 99, 99)";
                 secondes = secondes_depart;
                 minutes = minutes_depart;
                 cycle --;
                 para_sec.innerHTML = secondes;
                 para_min.innerHTML = minutes;
+                temps_de.innerHTML = "<p>Temps de : " + mode;
+                para_min.style.color = "rgb(194, 164, 17)";
+                para_sec.style.color = "rgb(194, 164, 17)";
                 if (cycle >= 0){
-                    para_repeti.innerHTML = "<p>Nombre de répétition restante : </p>" + cycle;
+                    para_repeti.innerHTML = "<p>Nombre de cycle(s) restant(s) : </p>" + cycle;
                 }
             }
             
             if (cycle < 0){
                 play = false;
+                bouton.textContent = "Démarer";
             }
         }
         if (secondes == 0){

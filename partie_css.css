@@ -20,6 +20,11 @@ body{
 
 }
 
+#temps{
+    text-align: center;
+    color: rgb(194, 164, 17);
+}
+
 button{
     color: rgb(194, 164, 17);
     background-color: black;

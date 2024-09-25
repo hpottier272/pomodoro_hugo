@@ -1,6 +1,62 @@
 h1{
-    color: red;
+    color: rgb(194, 164, 17);
     text-align: center;
-    background-color: bisque;
-    border-radius: 10%;
+    background-color: rgb(19, 18, 5);
 }
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom right,rgb(189, 2, 2),85%, rgb(254, 99, 99));
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+#affichage_min, #affichage_sec{
+    color: rgb(194, 164, 17);
+    font-size: xx-large;
+    text-align: center;
+
+}
+
+button{
+    color: rgb(194, 164, 17);
+    background-color: black;
+
+}
+
+#action{
+    margin-left:47%;
+}
+
+#maj{
+    margin-top: 3%;
+    margin-right: 50%;
+}
+
+h3{
+    color: rgb(194, 164, 17);
+    text-align: center; 
+}
+
+
+/*
+.fond{
+    height: 100%;
+    width: 100%;
+    background-image: url("travail.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    background-position: center;
+
+}
+*/
+input{
+    background-color: rgb(32, 32, 76);
+    border-radius: 13%;
+    margin-top: 3%;
+    margin-right: 50%;    
+}
+

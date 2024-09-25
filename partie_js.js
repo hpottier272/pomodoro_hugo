@@ -25,7 +25,7 @@ let play = false;
 let travail = 1;
 para_sec.innerHTML = secondes;
 para_min.innerHTML = minutes;
-para_repeti.innerHTML = "<p>nombre de répétition restante : </p>" + cycle;
+para_repeti.innerHTML = "<p>Nombre de répétition restante : </p>" + cycle;
 
 
 function valid(){
@@ -53,7 +53,7 @@ function valid(){
     }
     para_min.innerHTML = minutes;
     para_sec.innerHTML = secondes;
-    para_repeti.innerHTML = "<p>nombre de répétition restante : </p>" + cycle;
+    para_repeti.innerHTML = "<p>Nombre de répétition restante : </p>" + cycle;
 
 }
 
@@ -75,7 +75,7 @@ function lance(){
         cycle = cycle_depart;
         para_sec.innerHTML = secondes;
         para_min.innerHTML = minutes;
-        para_repeti.innerHTML = "<p>nombre de répétition restante : </p>" + cycle;
+        para_repeti.innerHTML = "<p>Nombre de répétition restante : </p>" + cycle;
         bouton.textContent = "Démarer";
     };
     tictictic();
@@ -89,7 +89,7 @@ function tictictic() {
         secondes--;
         para_sec.innerHTML = secondes;
         para_min.innerHTML = minutes;
-        para_repeti.innerHTML = "<p>nombre de répétition restante : </p>" + cycle;
+        para_repeti.innerHTML = "<p>Nombre de répétition restante : </p>" + cycle;
 
         if (secondes == 0 && minutes == 0) {
             travail ++;
@@ -106,7 +106,7 @@ function tictictic() {
                 para_sec.innerHTML = secondes;
                 para_min.innerHTML = minutes;
                 if (cycle >= 0){
-                    para_repeti.innerHTML = "<p>nombre de répétition restante : </p>" + cycle;
+                    para_repeti.innerHTML = "<p>Nombre de répétition restante : </p>" + cycle;
                 }
             }
             

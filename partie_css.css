@@ -1,7 +1,6 @@
 h1{
-    color: rgb(194, 164, 17);
+    color: white;
     text-align: center;
-    background-color: rgb(19, 18, 5);
 }
 
 body{
@@ -14,26 +13,38 @@ body{
 }
 
 #affichage{
-    color: rgb(194, 164, 17);
+    color: white;
     font-size: 8vw;
     text-align: center;
 
 }
 
+.deuxieme_cercle{
+    margin-left: 38%;
+    border-radius:50%;
+    width: 32vw;
+    height: 32vw;
+    border: 1vw solid black;
+}
+
 .cercle{
-    margin-left: 50%;
-    margin-right: 50%;
-    display: inline-block;
-    background:#bfd70e;
+    margin-top: 1.5%;
+    margin-left: 1.5%;
     border-radius:50%;
     width: 30vw;
     height: 30vw;
-    border:2px solid #679403;
+    border: 0.6vw solid   rgb(194, 164, 17);
+}
+
+.cercle, .deuxieme_cercle{
+    display: inline-block;
+    background: rgb(189, 2, 2);
+    border-radius:50%;
 }
 
 #temps{
     text-align: center;
-    color: rgb(194, 164, 17);
+    color: white;
 }
 
 button{
@@ -52,8 +63,12 @@ button{
 }
 
 h3{
-    color: rgb(194, 164, 17);
+    color: white;
     text-align: center; 
+}
+
+p{
+    color: white;
 }
 
 input{

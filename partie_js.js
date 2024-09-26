@@ -31,7 +31,7 @@ para_repeti.innerHTML = "<p>Nombre de cycle(s) restant(s) : " + cycle + "</p>";
 temps_de.innerHTML = "<p>Temps de : " + mode;
 
 function valid(){
-    if(chm_min_rp.value != 0 && chm_min_rp.value <=59){
+    if(chm_min_rp.value != 0 && chm_min_rp.value <=120){
         minutes_repos = chm_min_rp.value;
         minutes_depart_repos = minutes_repos;
     }
@@ -39,7 +39,7 @@ function valid(){
         secondes_repos = chm_sec_rp.value;
         secondes_depart_repos = secondes_repos;
     }
-    if(chm_min_tr.value != 0 && chm_min_tr.value <= 59 ){
+    if(chm_min_tr.value != 0 && chm_min_tr.value <= 120 ){
         minutes_travail = chm_min_tr.value;
         minutes = minutes_travail;
         minutes_depart = minutes_travail;

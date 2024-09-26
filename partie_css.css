@@ -110,9 +110,7 @@ h3,h2{
     text-align: center; 
 }
 
-h3{
-    font-size: 1.7vw;  
-}
+
 
 h2{
     font-size: 2vw;
@@ -122,6 +120,13 @@ p{
     font-size: 1.4vw;
     color: white;
 }
+
+.text_chono{
+    font-size: 3vw;  
+    text-align: center;
+    font-weight: bold;
+}
+
 
 input{
     background-color: white;

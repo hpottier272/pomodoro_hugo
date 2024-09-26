@@ -105,14 +105,9 @@ button{
     word-break: break-word;
 }
 
-h3,h2{
+h2{
     color: white;
     text-align: center; 
-}
-
-
-
-h2{
     font-size: 2vw;
 }
 

@@ -56,7 +56,7 @@ function valid(){
     para_min = minutes;
     para_sec = secondes;
     affiche_chrono.innerHTML = para_min + " : " + para_sec;
-    para_repeti.innerHTML = "<p>Nombre de cycle(s) restant(s) : </p>" + cycle;
+    para_repeti.innerHTML = "<p>Nombre de cycle(s) restant(s) : " + cycle + "</p>";
 
 }
 
@@ -79,7 +79,7 @@ function lance(){
         para_sec = secondes;
         para_min = minutes;
         affiche_chrono.innerHTML = para_min + " : " + para_sec;
-        para_repeti.innerHTML = "<p>Nombre de cycle(s) restant(s) : </p>" + cycle;
+        para_repeti.innerHTML = "<p>Nombre de cycle(s) restant(s) : " + cycle + "</p>";
         bouton.textContent = "Démarer";
     };
     tictictic();
@@ -94,7 +94,7 @@ function tictictic() {
         para_sec = secondes;
         para_min = minutes;
         affiche_chrono.innerHTML = para_min + " : " + para_sec;
-        para_repeti.innerHTML = "<p>Nombre de cycle(s) restant(s) : </p>" + cycle;
+        para_repeti.innerHTML = "<p>Nombre de cycle(s) restant(s) : " + cycle + "</p>";
 
         if(minutes == 0 && secondes <= 10){
             if (affiche_chrono.style.color == "rgb(194, 164, 17)"){
@@ -132,7 +132,7 @@ function tictictic() {
                 affiche_chrono.style.color = "rgb(194, 164, 17)";
                 affiche_chrono.style.color = "rgb(194, 164, 17)";
                 if (cycle >= 0){
-                    para_repeti.innerHTML = "<p>Nombre de cycle(s) restant(s) : </p>" + cycle;
+                    para_repeti.innerHTML = "<p>Nombre de cycle(s) restant(s) : " + cycle + "</p>";
                 }
             }
             

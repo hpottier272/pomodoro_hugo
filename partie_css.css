@@ -20,20 +20,20 @@ body{
 }
 
 .deuxieme_cercle{
-    margin-left: 38%;
+    margin-left: 32%;
     border-radius:50%;
-    width: 32vw;
-    height: 32vw;
-    border: 1vw solid black;
+    width: 34vw;
+    height: 34vw;
+    border: 0.7vw solid black;
 }
 
 .cercle{
-    margin-top: 1.5%;
-    margin-left: 1.5%;
+    margin-top: 3%;
+    margin-left: 3%;
     border-radius:50%;
     width: 30vw;
     height: 30vw;
-    border: 0.6vw solid   rgb(194, 164, 17);
+    border: 1vw solid   rgb(194, 164, 17);
 }
 
 .cercle, .deuxieme_cercle{
@@ -42,10 +42,6 @@ body{
     border-radius:50%;
 }
 
-#temps{
-    text-align: center;
-    color: white;
-}
 
 button{
     color: rgb(194, 164, 17);
@@ -54,26 +50,76 @@ button{
 }
 
 #action{
-    margin-left:47%;
+    margin-left:42%;
+    background: linear-gradient(to bottom right, #1b0202, #9c5252);
+    border: 0.5;
+    border-color: #000000;
+    border-radius: 12px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 3vw;
+    font-weight: 600;
+    line-height: 3;
+    outline: transparent;
+    padding: 0 1rem;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .2s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    
 }
+
 
 #maj{
     margin-top: 3%;
-    margin-right: 50%;
+    margin-left: 1%;
+    align-items: center;
+    background-color: #000000;
+    background-position: 0 0;
+    border: 1px solid #97942d;
+    border-radius: 11px;
+    box-sizing: border-box;
+    color: #f9f4f4;
+    cursor: pointer;
+    display: flex;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 33.4929px;
+    list-style: outside url(https://www.smashingmagazine.com/images/bullet.svg) none;
+    padding: 2px 12px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: none;
+    text-underline-offset: 1px;
+    transition: border .2s ease-in-out,box-shadow .2s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    word-break: break-word;
 }
 
-h3{
+h3,h2{
     color: white;
     text-align: center; 
 }
+
 
 p{
     color: white;
 }
 
 input{
-    background-color: rgb(32, 32, 76);
-    border-radius: 13%;
+    background-color: white;
+    border-width: 0.5vw;
+    border-color:  rgb(194, 164, 17);
+    
+    border-radius: 6.25em;
     margin-top: 3%;
     margin-right: 50%;    
 }

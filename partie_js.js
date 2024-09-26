@@ -28,7 +28,7 @@ let para_sec = secondes;
 let para_min = minutes;
 affiche_chrono.innerHTML = para_min + " : " + para_sec;
 para_repeti.innerHTML = "<p>Nombre de cycle(s) restant(s) : " + cycle + "</p>";
-temps_de.innerHTML = "<p>Temps de : " + mode;
+temps_de.innerHTML = "Temps de : " + mode;
 
 function valid(){
     if(chm_min_rp.value != 0 && chm_min_rp.value <=120){
@@ -115,7 +115,7 @@ function tictictic() {
                 para_sec = secondes;
                 para_min = minutes;
                 affiche_chrono.innerHTML = para_min + " : " + para_sec;
-                temps_de.innerHTML = "<p>Temps de : " + mode;
+                temps_de.innerHTML = "Temps de : " + mode;
                 affiche_chrono.style.color = "rgb(194, 164, 17)";
                 affiche_chrono.style.color = "rgb(194, 164, 17)";
             }
@@ -128,7 +128,7 @@ function tictictic() {
                 para_sec = secondes;
                 para_min = minutes;
                 affiche_chrono.innerHTML = para_min + " : " + para_sec;
-                temps_de.innerHTML = "<p>Temps de : " + mode;
+                temps_de.innerHTML = "Temps de : " + mode;
                 affiche_chrono.style.color = "rgb(194, 164, 17)";
                 affiche_chrono.style.color = "rgb(194, 164, 17)";
                 if (cycle >= 0){

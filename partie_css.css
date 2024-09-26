@@ -1,6 +1,7 @@
 h1{
     color: white;
     text-align: center;
+    font-size: 2vw;
 }
 
 body{
@@ -14,16 +15,16 @@ body{
 
 #affichage{
     color: white;
-    font-size: 8vw;
+    font-size: 7vw;
     text-align: center;
 
 }
 
 .deuxieme_cercle{
-    margin-left: 32%;
+    margin-left: 34%;
     border-radius:50%;
-    width: 34vw;
-    height: 34vw;
+    width: 28vw;
+    height: 28vw;
     border: 0.7vw solid black;
 }
 
@@ -31,8 +32,8 @@ body{
     margin-top: 3%;
     margin-left: 3%;
     border-radius:50%;
-    width: 30vw;
-    height: 30vw;
+    width: 24vw;
+    height: 24vw;
     border: 1vw solid   rgb(194, 164, 17);
 }
 
@@ -59,9 +60,9 @@ button{
     cursor: pointer;
     display: inline-block;
     font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-    font-size: 3vw;
-    font-weight: 600;
-    line-height: 3;
+    font-size: 2.5vw;
+    font-weight: 450;
+    line-height: 2;
     outline: transparent;
     padding: 0 1rem;
     text-align: center;
@@ -109,8 +110,16 @@ h3,h2{
     text-align: center; 
 }
 
+h3{
+    font-size: 1.7vw;  
+}
+
+h2{
+    font-size: 2vw;
+}
 
 p{
+    font-size: 1.4vw;
     color: white;
 }
 
@@ -118,9 +127,10 @@ input{
     background-color: white;
     border-width: 0.5vw;
     border-color:  rgb(194, 164, 17);
-    
     border-radius: 6.25em;
     margin-top: 3%;
-    margin-right: 50%;    
+    margin-right: 50%; 
+    height: 2.5vw;
+    width: 33vw;   
 }
 

@@ -21,7 +21,7 @@ body{
 }
 
 .deuxieme_cercle{
-    margin-left: 34%;
+    margin-left: 33%;
     border-radius:50%;
     width: 28vw;
     height: 28vw;
@@ -29,8 +29,8 @@ body{
 }
 
 .cercle{
-    margin-top: 3%;
-    margin-left: 3%;
+    margin-top: 3.5%;
+    margin-left: 3.5%;
     border-radius:50%;
     width: 24vw;
     height: 24vw;
@@ -53,7 +53,7 @@ button{
 #action{
     margin-left:42%;
     background: linear-gradient(to bottom right, #1b0202, #9c5252);
-    border: 0.5;
+    border: 0.5%;
     border-color: #000000;
     border-radius: 12px;
     color: #FFFFFF;
@@ -125,12 +125,20 @@ p{
 
 input{
     background-color: white;
-    border-width: 0.5vw;
+    border-width: 0.8vw;
     border-color:  rgb(194, 164, 17);
     border-radius: 6.25em;
-    margin-top: 3%;
+    margin-top: 2%;
+    margin-bottom: 5%;
     margin-right: 50%; 
-    height: 2.5vw;
-    width: 33vw;   
+    height: 4vw;
+    width: 33vw; 
+
+}
+
+label{
+    color: white;
+    margin-left: 7vw ;
+    font-size: 2.2vw;
 }
 

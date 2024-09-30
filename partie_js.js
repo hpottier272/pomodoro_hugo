@@ -12,7 +12,7 @@ var secondes = 0;
 var secondes_rp = 0;
 var minutes_rp = 5;
 var minutes = 25;
-var cycle = 10;
+var cycle = 4;
 var secondes_depart_repos = secondes_rp;
 var minutes_depart_repos = minutes_rp;
 var minutes_depart = minutes;
@@ -82,13 +82,13 @@ function lance(){
         para_repeti.innerHTML = "<p>Nombre de cycle(s) restant(s) : " + cycle + "</p>";
         bouton.textContent = "Démarer";
     };
-    tictictic();
+    lancement_temps();
 }
 
 
-setInterval(tictictic, 1000);
+setInterval(lancement_temps, 1000);
 
-function tictictic() {
+function lancement_temps() {
     if (play == true){
         secondes--;
         para_sec = secondes;

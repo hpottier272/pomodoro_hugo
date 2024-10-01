@@ -1,9 +1,3 @@
-h1{
-    color: white;
-    text-align: center;
-    font-size: 2vw;
-}
-
 body{
     margin: 0;
     padding: 0;
@@ -12,6 +6,53 @@ body{
     background: linear-gradient(to bottom right,rgb(189, 2, 2),70%, rgb(254, 99, 99));
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
+/*====================== Pour le texte ============================*/
+h1{
+    color: white;
+    text-align: center;
+    font-size: 2vw;
+}
+
+h2{
+    color: white;
+    text-align: center; 
+    font-size: 3vw;
+}
+
+p{
+    font-size: 2.5vw;
+    color: white;
+}
+
+.text_chono{
+    font-size: 3vw;  
+    text-align: center;
+    font-weight: bold;
+}
+
+/*====================== Pour les insertion des nouvelles valeurs pour le chrono ============================*/
+
+input{
+    background-color: white;
+    border-width: 0.8vw;
+    border-color:  rgb(194, 164, 17);
+    border-radius: 6.25em;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    margin-right: 50%; 
+    height: 4vw;
+    width: 33vw; 
+
+}
+
+label{
+    color: white;
+    margin-left: 7vw ;
+    font-size: 3vw;
+}
+
+
+/*====================== Pour les cercles ============================*/
 
 #affichage{
     color: white;
@@ -43,6 +84,7 @@ body{
     border-radius:50%;
 }
 
+/*====================== Pour les boutons ============================*/
 
 button{
     color: rgb(194, 164, 17);
@@ -75,7 +117,6 @@ button{
     
 }
 
-
 #maj{
     margin-top: 3%;
     margin-left: 1%;
@@ -105,40 +146,4 @@ button{
     word-break: break-word;
 }
 
-h2{
-    color: white;
-    text-align: center; 
-    font-size: 3vw;
-}
-
-p{
-    font-size: 2.5vw;
-    color: white;
-}
-
-.text_chono{
-    font-size: 3vw;  
-    text-align: center;
-    font-weight: bold;
-}
-
-
-input{
-    background-color: white;
-    border-width: 0.8vw;
-    border-color:  rgb(194, 164, 17);
-    border-radius: 6.25em;
-    margin-top: 2%;
-    margin-bottom: 5%;
-    margin-right: 50%; 
-    height: 4vw;
-    width: 33vw; 
-
-}
-
-label{
-    color: white;
-    margin-left: 7vw ;
-    font-size: 3vw;
-}
 

@@ -30,6 +30,11 @@ affiche_chrono.innerHTML = para_min + " : " + para_sec;
 para_repeti.innerHTML = "<p>Nombre de cycle(s) restant(s) : " + cycle + "</p>";
 temps_de.innerHTML = "Temps de : " + mode;
 
+/**
+ * La fonction valid est lancée dés que le bouton 'valider' est appuyé (celui pour changer les paramètres du chronomètre)
+ * Elle regarde si les champs on était remplis, si oui elle change par la nouvelle valeur, si non elle garde le paramètres par défault
+ * Puis elle affiche les changements  
+ */
 function valid(){
     if(chm_min_rp.value != 0 && chm_min_rp.value <=120){
         minutes_repos = chm_min_rp.value;
@@ -60,6 +65,13 @@ function valid(){
 
 }
 
+
+/**
+ * La fonction lance est lancée dés que le bouton 'Démarrer' est appuyé (celui pour actionner le chronomètre)
+ * Elle s'occupe de faire la première seconde, change le texte du bouton de départ,
+ * et s'occupe de réinitailizer le chrono et les cycles. 
+ * Elle appelle aussi la fonction 'lancement_temps' qui permet de faire tourner le chrono
+*/
 function lance(){
     if (play == false){
         play = true;
@@ -86,8 +98,18 @@ function lance(){
 }
 
 
+
+/**
+ * permet d'appeler la fonction 'lancement_temps' toutes les secondes 
+ */
 setInterval(lancement_temps, 1000);
 
+
+
+/**
+ * La fonction 'lancement_temps' est lancée par la fonction 'lance' (celle qui réagit avec le bouton 'demarrer' du chrono)
+ * Elle s'occupe de faire tourner le chrono, les cycles, les changements de mode (travail et repos)
+ */
 function lancement_temps() {
     if (play == true){
         secondes--;
@@ -96,7 +118,7 @@ function lancement_temps() {
         affiche_chrono.innerHTML = para_min + " : " + para_sec;
         para_repeti.innerHTML = "<p>Nombre de cycle(s) restant(s) : " + cycle + "</p>";
 
-        if(minutes == 0 && secondes <= 10){
+        if(minutes == 0 && secondes <= 10){//faire clignoter le chrono
             if (affiche_chrono.style.color == "rgb(194, 164, 17)"){
                 affiche_chrono.style.color = "rgb(0,0,0)";
             }
@@ -105,7 +127,7 @@ function lancement_temps() {
             }
         }
 
-        if (secondes == 0 && minutes == 0) {
+        if (secondes == 0 && minutes == 0) {//fin d'un mode
             travail ++;
             if (travail % 2 == 0){//repos
                 mode = "REPOS";
@@ -136,17 +158,17 @@ function lancement_temps() {
                 }
             }
             
-            if (cycle < 0){
+            if (cycle < 0){//fin des cycles
                 play = false;
                 bouton.textContent = "Démarer";
             }
         }
-        if (secondes == 0){
+        if (secondes == 0){//fin d'une minute
             secondes = 60;
             minutes--;
         }
     }
-    else{
+    else{// fin du chrono
         clearTimeout();
     }
 }

@@ -108,11 +108,11 @@ button{
 h2{
     color: white;
     text-align: center; 
-    font-size: 2vw;
+    font-size: 3vw;
 }
 
 p{
-    font-size: 2vw;
+    font-size: 2.5vw;
     color: white;
 }
 
@@ -139,6 +139,6 @@ input{
 label{
     color: white;
     margin-left: 7vw ;
-    font-size: 2.5vw;
+    font-size: 3vw;
 }
 
